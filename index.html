@@ -1,126 +1,671 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Netflix Clone</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
-    <header class="navbar">
-        <div class="navbar-container">
-            <div class="logo-container">
-                <h1 class="logo">NETFLIX</h1>
-            </div>
-            <div class="menu-container">
-                <ul class="menu-list">
-                    <li class="active">Home</li>
-                    <li>TV Shows</li>
-                    <li>Movies</li>
-                    <li>New & Popular</li>
-                    <li>My List</li>
-                </ul>
-            </div>
-            <div class="profile-container">
-                <div class="profile-picture">A</div>
-                <div class="profile-text">Account</div>
-            </div>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+          alt="Netflix image"
+          class="logo"
+        />
+      </div>
+      <div class="navbar-nav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Tv Shows</a>
+        <a href="#" class="nav-link">Movies</a>
+        <a href="#" class="nav-link">New & Popular</a>
+        <a href="#" class="nav-link">My Lists</a>
+      </div>
+      <div class="navbar-right">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-bell"></i>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+          alt="Profile image"
+          class="profile-icon"
+        />
+      </div>
+    </nav>
+
+    <!-- hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Strangers Things</h1>
+        <p class="hero-description">
+          When a young boy vanishes, a small town uncovers a mystery involving
+          secret experiments, terrifying supernatural forces and one strange
+          little girl.
+        </p>
+        <div class="hero-button">
+          <button class="btn btn-play"><i class="fa fa-play"></i>Play</button>
+          <button class="btn btn-more-info">
+            <i class="fa fa-info-circle"></i>More info
+          </button>
         </div>
+      </div>
     </header>
 
-    <div class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Money Heist</h1>
-            <p class="hero-description">A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain.</p>
-            <div class="hero-buttons">
-                <button class="play-button"><i class="fas fa-play"></i> Play</button>
-                <button class="more-info-button"><i class="fas fa-info-circle"></i> More Info</button>
+    <!-- Movie row -->
+    <div class="container">
+      <section class="content-section">
+        <h2 class="section-title">Only On Netflix</h2>
+
+        <div class="content-row">
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
     </div>
 
-    <div class="movies-section">
-        <h2 class="section-title">Popular on Netflix</h2>
-        <div class="movies-container">
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1606813903174-a72c532b032d?fit=crop&w=250&q=80" alt="Movie 1">
+    <!-- Movie row -->
+    <div class="container">
+      <section class="content-section">
+        <h2 class="section-title">Only On Netflix</h2>
+
+        <div class="content-row">
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1618886614638-40c464ff3d01?fit=crop&w=250&q=80" alt="Movie 2">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1581905764498-7e0f91d556f1?fit=crop&w=250&q=80" alt="Movie 3">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?fit=crop&w=250&q=80" alt="Movie 4">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1612010163933-e2bb5b46f54e?fit=crop&w=250&q=80" alt="Movie 5">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
     </div>
 
-    <div class="movies-section">
-        <h2 class="section-title">Trending Now</h2>
-        <div class="movies-container">
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1587271456823-7a6a1efc82f1?fit=crop&w=250&q=80" alt="Trending 1">
+    <!-- Movie row -->
+    <div class="container">
+      <section class="content-section">
+        <h2 class="section-title">Only On Netflix</h2>
+
+        <div class="content-row">
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1571782742502-483d59f6091c?fit=crop&w=250&q=80" alt="Trending 2">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?fit=crop&w=250&q=80" alt="Trending 3">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1621588919235-d2426e5b5084?fit=crop&w=250&q=80" alt="Trending 4">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1552173677-34a9e2e1d9f2?fit=crop&w=250&q=80" alt="Trending 5">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
     </div>
 
-    <div class="movies-section">
-        <h2 class="section-title">Watch Again</h2>
-        <div class="movies-container">
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1618942013253-e5353c2d712d?fit=crop&w=250&q=80" alt="Watch 1">
+    <!-- Movie row -->
+    <div class="container">
+      <section class="content-section">
+        <h2 class="section-title">Only On Netflix</h2>
+
+        <div class="content-row">
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1598899134739-24c46f58c176?fit=crop&w=250&q=80" alt="Watch 2">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1598899134583-4b0fbca3a2ef?fit=crop&w=250&q=80" alt="Watch 3">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?fit=crop&w=250&q=80" alt="Watch 4">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?fit=crop&w=250&q=80" alt="Watch 5">
+          </div>
+
+          <!-- Cards -->
+          <div class="content-card">
+            <img src="mission.webp" alt="When Life Gives You Tangerines" />
+            <div class="netflix-badge">N</div>
+
+            <div class="card-overlay">
+              <div class="overlay-top">
+                <div class="netflix-badge">N</div>
+              </div>
+              <div class="overlay-bottom">
+                <div class="overlay-title">When Life Gives You Tangerines</div>
+                <div class="overlay-controls">
+                  <div class="control-btn play-btn"></div>
+                  <div class="control-btn check-btn"></div>
+                  <div class="control-btn thumbs-btn"></div>
+                  <div class="control-btn more-btn"></div>
+                </div>
+                <div class="overlay-info">
+                  <div class="info-badge">TV-MA</div>
+                  <div class="info-badge">Limited Series</div>
+                  <div class="info-badge">HD</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
     </div>
 
+    <!-- Footer Section -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">FAQ</a>
-                <a href="#">Help Center</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Privacy</a>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <p class="copyright">© 2023 Netflix Clone. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Audio Description</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Legal Notices</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Corporate Information</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Media Center</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <button class="service-code">Service Code</button>
+          <p class="copyright">© 1997-2024 Netflix, Inc.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

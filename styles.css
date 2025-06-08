@@ -1,0 +1,345 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 60px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, transparent);
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #141414;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-list li {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #e5e5e5;
+    transition: color 0.3s;
+}
+
+.menu-list li:hover, .menu-list li.active {
+    color: #b3b3b3;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #e50914;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.profile-text {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 80vh;
+    background: linear-gradient(to top, #141414, transparent), 
+                url('https://via.placeholder.com/1920x1080?text=Money+Heist') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e5e5e5;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.play-button, .more-info-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.play-button {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.more-info-button {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    border: none;
+}
+
+.more-info-button:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+}
+
+.play-button i, .more-info-button i {
+    margin-right: 10px;
+}
+
+/* Movies Section Styles */
+.movies-section {
+    padding: 20px 60px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.movies-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    scrollbar-width: none; /* Firefox */
+}
+
+.movies-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.movie {
+    min-width: 250px;
+    height: 150px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.movie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+.footer {
+    padding: 40px 60px;
+    background-color: #141414;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #808080;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e5e5e5;
+}
+
+.social-links {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #808080;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #e5e5e5;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #808080;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar, .movies-section, .footer {
+        padding: 0 40px;
+    }
+    
+    .hero {
+        padding: 0 40px;
+    }
+    
+    .hero-title {
+        font-size: 40px;
+    }
+    
+    .hero-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar, .movies-section, .footer {
+        padding: 0 20px;
+    }
+    
+    .hero {
+        padding: 0 20px;
+        height: 60vh;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-description {
+        font-size: 14px;
+    }
+    
+    .menu-list li {
+        margin-right: 15px;
+        font-size: 12px;
+    }
+    
+    .movie {
+        min-width: 200px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0 10px;
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 24px;
+    }
+    
+    .menu-list {
+        display: none;
+    }
+    
+    .hero {
+        height: 50vh;
+        padding: 0 10px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    
+    .hero-description {
+        font-size: 14px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .movie {
+        min-width: 150px;
+        height: 90px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+}
